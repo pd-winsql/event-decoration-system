@@ -3,5 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'Welcome to the Event Decoration Consultation and Booking System!';
+
+    $businessName = 'Creative Moments Events Planning and Decoration Services';
+
+    $services = [
+        'Wedding Decorations',
+        'Birthday Decorations',
+        'Debut Decorations',
+        'Anniversary Decorations',
+        'School Event Decorations'
+    ];
+
+    return view('home', [
+        'businessName' => $businessName,
+        'services' => $services
+    ]);
 });
