@@ -21,6 +21,8 @@
         <li>{{ $service }}</li>
         @endforeach
     </ul>
+
+    <a href="/services">View Our Services</a>
 </body>
 
 </html>

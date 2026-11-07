@@ -19,3 +19,7 @@ Route::get('/', function () {
         'services' => $services
     ]);
 });
+
+Route::get('/services', function () {
+    return view('services'); 
+});
