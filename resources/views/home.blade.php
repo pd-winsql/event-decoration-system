@@ -1,28 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $businessName }} - Event Decoration Services</title>
-</head>
+@section('title', 'Home')
 
-<body>
-    <h1>Welcome to {{ $businessName }}!</h1>
+@section('content')
 
-    <p>
-        We help make your special occasions memorablethrough creative and beautiful event decorations.
-    </p>
+<h2>Welcome to {{ $businessName }}!</h2>
 
-    <h2>Our Services</h2>
+<p>
+    We help make your special occasions memorable through creative and beautiful event decorations.
+</p>
 
-    <ul>
-        @foreach ($services as $service)
-        <li>{{ $service }}</li>
-        @endforeach
-    </ul>
+<h3>Our Services</h3>
 
-    <a href="/services">View Our Services</a>
-</body>
+<ul>
+    @foreach ($services as $service)
+    <li>{{ $service }}</li>
+    @endforeach
+</ul>
 
-</html>
+<a href="/services">View Our Services</a>
+
+@endsection
+
+<!--
+    ('layouts.app') = dot(.) represents a folder separator
+    The title section sets the layout title to Home.
+    Think of the yield directive as an empty space in the layout and the section directive as the content that fills that space.
+-->
