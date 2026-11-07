@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-</head>
+@section('title', 'Services')
 
-<body>
-    <h1>Our Decoration Services</h1>
+@section('content')
 
-    <p>We provide creative decoration services for different types of special occasions.</p>
+<h1>Our Decoration Services</h1>
 
-    <ul>
-        <li>Wedding Decorations</li>
-        <li>Birthday Decorations</li>
-        <li>Debut Decorations</li>
-        <li>Anniversary Decorations</li>
-        <li>School Event Decorations</li>
-    </ul>
+<p>We provide creative decoration services for different types of special occasions.</p>
 
-    <a href="/">Back to Home</a>
-</body>
+<ul>
+    <li>Wedding Decorations</li>
+    <li>Birthday Decorations</li>
+    <li>Debut Decorations</li>
+    <li>Anniversary Decorations</li>
+    <li>School Event Decorations</li>
+</ul>
 
-</html>
+<a href="/">Back to Home</a>
+
+@endsection
