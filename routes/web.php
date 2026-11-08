@@ -23,3 +23,7 @@ Route::get('/', function () {
 Route::get('/services', function () {
     return view('services'); 
 });
+
+Route::get('/consultation', function() {
+    return view('consultation');
+});

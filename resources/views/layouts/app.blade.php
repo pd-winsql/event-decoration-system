@@ -14,6 +14,8 @@
             <a href="/">Home</a>
             |
             <a href="/services">Services</a>
+            |
+            <a href="/consultation">Request a Consultation</a>
         </nav>
     </header>
 
