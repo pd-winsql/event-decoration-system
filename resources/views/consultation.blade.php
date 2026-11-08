@@ -16,11 +16,11 @@
 
 <form>
     <div>
-        <label for="fullName">Full name</label>
+        <label for="full-name">Full name</label>
         <input
             type="text"
-            id="fullName"
-            name="fullName"
+            id="full-name"
+            name="full_name"
             required">
     </div>
 
@@ -43,8 +43,8 @@
     </div>
 
     <div>
-        <label for="eventType">Event type</label>
-        <select name="eventType" id="eventType" required>
+        <label for="event-type">Event type</label>
+        <select name="event_type" id="event-type" required>
             <option value="">--Choose an event--</option>
             <option value="wedding">Wedding</option>
             <option value="birthday">Birthday</option>
@@ -56,30 +56,30 @@
     </div>
 
     <div>
-        <label for="preferredEventDate">Preferred event date</label>
+        <label for="preferred-event-date">Preferred event date</label>
         <input
             type="date"
-            id="preferredEventDate"
-            name="preferredEventDate"
+            id="preferred-event-date"
+            name="preferred_event_date"
             required>
     </div>
 
     <div>
-        <label for="proposedConsultationDate">
+        <label for="proposed-consultation-date">
             Proposed consultation date
         </label>
         <input
             type="date"
-            id="proposedConsultationDate"
-            name="proposedConsultationDate"
+            id="proposed-consultation-date"
+            name="proposed_consultation_date"
             required>
     </div>
 
     <div>
-        <label for="additionalDetails">
+        <label for="additional-details">
             Additional details (optional)
         </label>
-        <textarea name="additionalDetails" id="additionalDetails" rows="5"></textarea>
+        <textarea name="additional_details" id="additional-details" rows="5"></textarea>
     </div>
 
     <button type="submit" disabled>Submit request</button>
