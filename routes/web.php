@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 Route::get('/', function () {
 
@@ -21,9 +23,13 @@ Route::get('/', function () {
 });
 
 Route::get('/services', function () {
-    return view('services'); 
+    return view('services');
 });
 
-Route::get('/consultation', function() {
+Route::get('/consultation', function () {
     return view('consultation');
+});
+
+Route::post('/consultation', function (Request $request) {
+    dd($request->all()); // dd() helper means dump and die
 });

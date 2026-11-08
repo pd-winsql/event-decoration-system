@@ -14,7 +14,8 @@
 
 <p>This form is a practice preview. Submission is not available yet.</p>
 
-<form>
+<form action="/consultation" method="POST">
+    @csrf <!-- adds Laravel’s protection against cross-site request forgery. -->
     <div>
         <label for="full-name">Full name</label>
         <input
@@ -82,7 +83,7 @@
         <textarea name="additional_details" id="additional-details" rows="5"></textarea>
     </div>
 
-    <button type="submit" disabled>Submit request</button>
+    <button type="submit">Submit request</button>
 </form>
 
 @endsection
